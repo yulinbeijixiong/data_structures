@@ -46,9 +46,6 @@ public class EightQueensDemo {
      * @return
      */
     public static boolean conflict(int n){
-        if(n==0){
-            return false;
-        }
         for (int i = 0; i < n; i++) {
             conflictCount++;
             //在同一个列代表冲突
