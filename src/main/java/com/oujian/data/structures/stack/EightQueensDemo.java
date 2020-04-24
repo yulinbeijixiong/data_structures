@@ -29,7 +29,7 @@ public class EightQueensDemo {
         }
         //第一行的所有列依次放入第一个皇后
         for (int i = 0; i < max; i++) {
-            //放置皇后
+            //放置皇后，每行都会从第一列放到最后一列
             array[n]=i;
             //判断是否发生冲突，然后再回溯以前放置的皇后是否与当前皇后发生冲突
             if(!conflict(n)){
@@ -37,7 +37,6 @@ public class EightQueensDemo {
                 check(n+1);
             }
         }
-
     }
 
     /**

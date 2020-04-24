@@ -45,7 +45,6 @@ class ArrayQueue{
         data = new int[maxsize];
     }
     private boolean isEmpty(){
-
         return front==rear;
     }
     private boolean isFull(){

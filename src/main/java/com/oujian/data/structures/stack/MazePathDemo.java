@@ -1,4 +1,4 @@
-package com.oujian.data.structures.stack.algorithm;
+package com.oujian.data.structures.stack;
 
 /**
  * @author annyu

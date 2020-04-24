@@ -1,4 +1,4 @@
-package com.oujian.data.structures.sparseArray;
+package com.oujian.data.structures.array;
 
 /**
  * @author annyu

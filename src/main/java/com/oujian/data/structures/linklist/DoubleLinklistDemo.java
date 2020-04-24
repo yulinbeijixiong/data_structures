@@ -1,4 +1,4 @@
-package com.oujian.data.structures.stack;
+package com.oujian.data.structures.linklist;
 
 /**
  * @author annyu
