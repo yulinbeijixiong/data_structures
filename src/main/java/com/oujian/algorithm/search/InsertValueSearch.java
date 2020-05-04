@@ -1,4 +1,4 @@
-package com.oujian.data.structures.algorithm.search;
+package com.oujian.algorithm.search;
 
 /**
  * @author annyu

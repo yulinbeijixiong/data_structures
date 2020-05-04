@@ -1,4 +1,4 @@
-package com.oujian.data.structures.algorithm.sort;
+package com.oujian.algorithm.sort;
 
 import java.util.Arrays;
 import java.util.Random;
