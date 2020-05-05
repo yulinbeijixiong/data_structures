@@ -141,6 +141,9 @@ class Node {
         this.value = value;
     }
 
+    /**
+     * 左旋
+     */
     public void leftRotate() {
         //创一个新节点，将当前节点的值赋给新节点
         Node node = new Node(value);
@@ -156,6 +159,9 @@ class Node {
         left = node;
     }
 
+    /**
+     * 右旋
+     */
     public void rightRote() {
         Node node = new Node(value);
         node.right = right;
@@ -227,7 +233,6 @@ class Node {
 
     /**
      * 添加节点
-     *
      * @param node
      */
     public void add(Node node) {
