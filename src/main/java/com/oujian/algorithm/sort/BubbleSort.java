@@ -43,6 +43,5 @@ public class BubbleSort {
             }
 
         }
-        System.out.println(Arrays.toString(array));
     }
 }

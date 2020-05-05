@@ -31,8 +31,6 @@ public class HeapSort {
         for (int i = array.length/2 -1; i >=0; i--) {
             adjustHeap1(array,i,array.length);
         }
-
-        //进行交换
         int temp;
 
         for (int i = array.length-1; i >0 ; i--) {

@@ -39,6 +39,16 @@ public class BinarySearch {
             return mid;
         }
     }
+
+    /**
+     * 可以查找多个值
+     * @param array
+     * @param findValue
+     * @param left
+     * @param right
+     * @param result
+     * @return
+     */
     public static List<Integer> search1(int[] array, int findValue, int left, int right, List<Integer> result){
         if(left>right){
             result.add(-1);

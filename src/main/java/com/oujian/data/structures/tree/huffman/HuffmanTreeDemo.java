@@ -28,6 +28,7 @@ public class HuffmanTreeDemo {
             Collections.sort(list);
             Node leftNode = list.get(0);
             Node rightNode = list.get(1);
+            //左右节点相加
             Node node = new Node(leftNode.getValue() + rightNode.getValue());
             node.setLeftNode(leftNode);
             node.setRightNode(rightNode);
@@ -39,14 +40,6 @@ public class HuffmanTreeDemo {
 
         }
         return list.get(0);
-    }
-    public static void proOrder(Node root){
-        if(root!=null){
-            root.proOrder();
-        }else{
-            System.out.println("是一个空树");
-        }
-
     }
 }
 

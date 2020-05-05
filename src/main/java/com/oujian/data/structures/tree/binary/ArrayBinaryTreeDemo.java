@@ -27,7 +27,7 @@ class ArrayBinary{
         if(index*2+1<array.length){
             preOrder(index*2+1);
         }
-        //向右digui
+        //向右递归
         if(index*2+2<array.length){
             preOrder(index*2+2);
         }

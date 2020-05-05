@@ -10,14 +10,15 @@ import java.util.Random;
  **/
 public class QuickSort {
     public static void main(String[] args) {
-        int[] array = new int[800000];
-        Random random = new Random();
-        for (int i = 0; i < 800000; i++) {
-            array[i] = random.nextInt(1000000000);
-        }
-        long now =System.currentTimeMillis();
+//        int[] array = new int[800000];
+//        Random random = new Random();
+//        for (int i = 0; i < 800000; i++) {
+//            array[i] = random.nextInt(1000000000);
+//        }
+//        long now =System.currentTimeMillis();
+       int[] array={1,2,-4,-7,-8,6,10};
         sort(0, array.length - 1, array);
-        System.out.println(System.currentTimeMillis()-now);
+        System.out.println(System.currentTimeMillis());
 
     }
     public static void sort(int left, int right, int[] array) {
@@ -28,7 +29,7 @@ public class QuickSort {
             int standPoint = array[l];
             //当l==r 跳出循环
             while (l < r) {
-                //在左边找到比基准数大的
+                //在左边找到比基准数小的数
                 while (l < r && standPoint <= array[r]) {
                     r--;
                 }

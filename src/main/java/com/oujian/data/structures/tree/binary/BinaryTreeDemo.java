@@ -1,6 +1,8 @@
 package com.oujian.data.structures.tree.binary;
 
 
+import lombok.Data;
+
 /**
  * @author annyu
  * @description 二叉树demo
@@ -100,6 +102,7 @@ class BinaryTree{
         return false;
     }
 }
+@Data
 class TreeNode{
     private int no;
     private String name;
@@ -116,53 +119,6 @@ class TreeNode{
      */
     private int rightType;
 
-    public int getLeftType() {
-        return leftType;
-    }
-
-    public void setLeftType(int leftType) {
-        this.leftType = leftType;
-    }
-
-    public int getRightType() {
-        return rightType;
-    }
-
-    public void setRightType(int rightType) {
-        this.rightType = rightType;
-    }
-
-    public void setNo(int no) {
-        this.no = no;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setLeft(TreeNode left) {
-        this.left = left;
-    }
-
-    public void setRight(TreeNode right) {
-        this.right = right;
-    }
-
-    public int getNo() {
-        return no;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public TreeNode getLeft() {
-        return left;
-    }
-
-    public TreeNode getRight() {
-        return right;
-    }
 
     public TreeNode(int no, String name) {
         this.no = no;
@@ -259,8 +215,13 @@ class TreeNode{
         }
         return result;
     }
-    public TreeNode afterSearch(int no){
 
+    /**
+     * 后序遍历
+     * @param no
+     * @return
+     */
+    public TreeNode afterSearch(int no){
         //向左递归
         TreeNode result=null;
         if(this.left!=null){
